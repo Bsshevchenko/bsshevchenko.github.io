@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.slider {
+    width : 100%;
+    overflow-x: nowrap;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slider-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.slider img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="slider">
+  <div class="slider-wrapper">
+    <div class="slider-item">
+      <img src="photo/1_diplom.jpg" alt="Изображение 1">
+    </div>
+    <div class="slider-item">
+      <img src="photo/2_diplom.jpg" alt="Изображение 2">
+    </div>
+    <div class="slider-item">
+      <img src="photo/3_diplom.jpg" alt="Изображение 3">
+    </div>
+    <div class="slider-item">
+      <img src="photo/4_diplom.jpg" alt="Изображение 4">
+    </div>
+    <div class="slider-item">
+      <img src="photo/5_diplom.jpg" alt="Изображение 5">
+    </div>
+  </div>
+  <div class="arrow left-arrow">&larr;</div>
+  <div class="arrow right-arrow">&rarr;</div>
+</div>
+
+<script>
+const slider = document.querySelector('.slider');
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+const sliderItems = document.querySelectorAll('.slider-item');
+let currentIndex = 0;
+
+leftArrow.addEventListener('click', () => {
+  if (currentIndex === 0) {
+    currentIndex = sliderItems.length - 1;
+  } else {
+    currentIndex--;
+  }
+  sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+rightArrow.addEventListener('click', () => {
+  if (currentIndex === sliderItems.length - 1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+  sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+</script>
+
+</body>
+</html>
