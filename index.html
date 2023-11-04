@@ -157,8 +157,8 @@
         <!-- Initialize Swiper -->
         <script>
           var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: window.innerWidth < 768 ? 2 : 3,
+            spaceBetween: window.innerWidth < 768 ? 5 : 30,
              pagination: {
               el: ".swiper-pagination",
               clickable: true,
