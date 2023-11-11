@@ -124,7 +124,7 @@ h3 {
 
 .hero__box-img {
   animation: ava-bg 3s infinite alternate;
-  margin-left: -50px;
+  /* margin-left: -50px; */
   }
 
 
@@ -291,6 +291,19 @@ h3 {
 
 }
 
+  
+/* Добавим стили для подвала */
+footer {
+  background-color: #333; /* Цвет фона подвала */
+  color: #fff; /* Цвет текста в подвале */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 
 
@@ -393,7 +406,6 @@ h3 {
     text-align: center;
     }
       
-  
 
   
 }
