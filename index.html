@@ -1,113 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Богдан Шевченко — Team Lead / ML Engineer</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
   <link rel="stylesheet" href="style.css">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
 
 <body>
 
-  <!-- <header class="header"> -->
-    <!-- <span class="logo">Сайт Богдана Шевченко</span> -->
-  <!-- </header> -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">BS</span>
+      <div class="nav-links">
+        <a href="#home">Главная</a>
+        <a href="#resume">Резюме</a>
+        <a href="#projects">Проекты</a>
+        <a href="#skills">Навыки</a>
+      </div>
+    </div>
+  </nav>
 
-
- <!--page 1-->
-  <div class="hero">
+  <!-- Hero -->
+  <section id="home" class="hero">
     <div class="container hero__container">
-      
-      <div class="hero__about">
-        <h1 class="hero__title">Team Lead / ML Engineer</h1>
-        <h2 class="hero__subtitle">Богдан Шевченко</h2>
+      <div class="hero__content">
+        <p class="hero__greeting">Привет, я</p>
+        <h1 class="hero__name">Богдан Шевченко</h1>
+        <h2 class="hero__role">Team Lead / ML Engineer</h2>
         <p class="hero__description">
-          Привет, я занимаюсь разработкой моделей машинного обучения. Открыт для сотрудничества.
+          Занимаюсь разработкой ML/LLM-решений в high-load среде. Руковожу направлением антифрода в Wildberries, строю команды, запускаю production-сервисы. Преподаю в Яндекс.Практикум.
         </p>
-
-
         <div class="hero__links">
+          <a class="hero__link" href="https://github.com/Bsshevchenko" target="_blank"><i class='bx bxl-github'></i></a>
+          <a class="hero__link" href="https://t.me/bsshevchenko" target="_blank"><i class='bx bxl-telegram'></i></a>
           <a class="hero__link" href="https://vk.com/id194558040" target="_blank"><i class='bx bxl-vk'></i></a>
-          <a class="hero__link" href="https://github.com/Bsshevchenko"><i class='bx bxl-github'></i></a>
-          <a class="hero__link" href="https://instagram.com/nenazivaiimen"><i class='bx bxl-instagram'></i></a>
-          <a class="hero__link" href="https://t.me/bsshevchenko"><i class='bx bxl-telegram'></i></a>
-          
-           
+          <a class="hero__link" href="https://instagram.com/nenazivaiimen" target="_blank"><i class='bx bxl-instagram'></i></a>
         </div>
-
-        <!-- <h2 class="hero_subtitle_page1">Languages and Tools:</h2> -->
-        <!-- <p align="left" class = "hero_description_page1"> 
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </p>         --> 
       </div>
-
-      
-      <div class="hero__box">
-        <img class="hero__box-img" src="photo/11.png" alt="" width="473px" height="500px">
+      <div class="hero__photo-wrap">
+        <div class="hero__photo-inner">
+          <img src="photo/11.png" alt="Богдан Шевченко">
+        </div>
       </div>
-
     </div>
+  </section>
 
-  </div>
+  <!-- Resume -->
+  <section id="resume" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title"><span>Резюме</span></h2>
+      <div class="section__divider"></div>
 
-  
- <!--Landuage-->
- <!-- <div class="hero_page3">
-  <div class="container hero__container_page2">
-    <div class="hero__about_page2">
-        <h2 class="hero_subtitle_page1">Languages and Tools:</h2>
-        <p align="left" class = "hero_description_page1"> 
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> &nbsp;&nbsp;&nbsp;
-          <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </p>
-      
-    </div>
-  
-  </div>
-</div> -->
+      <h3 class="subsection-title">О себе</h3>
+      <ul class="about-list">
+        <li>Team Lead и Senior ML Engineer с 5+ годами опыта в разработке и внедрении ML/LLM-решений в high-load среде.</li>
+        <li>Руковожу направлением "Проблемный товар" в антифроде Wildberries — строю команду ML-инженеров, масштабирую продуктовую линейку, внедряю MLOps-практики.</li>
+        <li>Опыт в Wildberries, Сбербанке и Роснефти: запускал production-сервисы в антифроде, безопасной обработке данных и нефтедобыче, применяя классический ML, трансформеры (BERT) и LLM.</li>
+        <li>Преподаватель в Яндекс.Практикум на курсе <b>Инженер по машинному обучению</b></li>
+        <li>Спикер на более чем <b>20</b> международных научно-технических конференциях на русском и английском языках</li>
+        <li>Автор <b>3-х</b> научных публикаций (Scopus, ВАК) на русском и английском языках</li>
+      </ul>
 
+      <div class="experience">
+        <h3 class="subsection-title">Опыт работы</h3>
 
-
- <!--page 2-->
-  <div class="hero_page2">
-    <div class="container hero__container_page2">
-      <div class="hero__about_page2">
-        <h1 class="hero__title_page2">Резюме</h1>
-        <h2 class="hero__subtitle_page2">О себе:</h2>
-            <p class="hero__description_page2">
-                <ul class="hero__description_list2">
-                    <li>Team Lead и Senior ML Engineer с 5+ годами опыта в разработке и внедрении ML/LLM-решений в high-load среде.</li>
-                    <li>Руковожу направлением "Проблемный товар" в антифроде Wildberries — строю команду ML-инженеров, масштабирую продуктовую линейку, внедряю MLOps-практики.</li>
-                    <li>Опыт в Wildberries, Сбербанке и Роснефти: запускал production-сервисы в антифроде, безопасной обработке данных и нефтедобыче, применяя классический ML, трансформеры (BERT) и LLM.</li>
-                    <li>Преподаватель в Яндекс.Практикум на курсе <b>Инженер по машинному обучению</b></li>
-                    <li>Спикер на более чем <b>20</b> международных научно-технических конференциях на русском и английском языках</li>
-                    <li>Автор <b>3-х</b> научных публикаций (Scopus, ВАК) на русском и английском языках</li>
-                </ul>
-            </p>
-
-        <h2 class="hero__subtitle_page2">Опыт работы:</h2>
-        <br>
         <div class="job-entry">
           <div class="job-header">
             <span class="job-company">Wildberries Tech</span>
@@ -115,7 +78,7 @@
           </div>
           <div class="job-title">Team Lead</div>
           <p class="job-description">Руководитель направления "Проблемный товар" в антифроде. Масштабирую команду и продуктовую линейку, отвечаю за бизнес-метрики и технологическое развитие направления.</p>
-          <ul class="hero__description_list2">
+          <ul class="job-list">
             <li>Построил и развиваю команду ML-инженеров — найм, менторинг, code review, инженерная культура</li>
             <li>Масштабировал продуктовую линейку — запустил новые сервисы для детектирования фродовых схем</li>
             <li>Внедрил MLOps-практики (ClearML, MLflow, Airflow), автоматизировал деплой и мониторинг моделей</li>
@@ -132,7 +95,7 @@
           </div>
           <div class="job-title">Senior ML Engineer</div>
           <p class="job-description">Один из первых участников нового направления "Проблемный товар" в антифроде. Выстраивал с нуля ML/LLM-решения для детектирования и блокировки проблемного товара на маркетплейсе.</p>
-          <ul class="hero__description_list2">
+          <ul class="job-list">
             <li>Запустил направление с нуля — от сбора требований до production-развертывания</li>
             <li>Разработал 10+ production-сервисов для борьбы с фродом</li>
             <li>Применял гибридный подход: LLM, классические ML-модели, статистические методы и эвристики</li>
@@ -158,7 +121,7 @@
           </div>
           <div class="job-title">ML Engineer</div>
           <p class="job-description">SafeData — высоконагруженный сервис для профилирования и обезличивания персональных данных в банковских базах данных.</p>
-          <ul class="hero__description_list2">
+          <ul class="job-list">
             <li>Обучал трансформеры (BERT) для классификации последовательностей и NER-задач</li>
             <li>Разрабатывал генератор данных на основе фиксированной структуры и LLM</li>
             <li>Писал и оптимизировал алгоритмы и регулярные выражения для поиска ПДн в колонках БД</li>
@@ -175,7 +138,7 @@
           </div>
           <div class="job-title">ML Engineer</div>
           <p class="job-description">Разрабатывал и внедрял ML-решения для оптимизации нефтедобычи и автоматизации инженерных процессов.</p>
-          <ul class="hero__description_list2">
+          <ul class="job-list">
             <li>Разработал и внедрил в production ML-инструменты на базе LSTM-сетей для прогнозирования параметров скважин</li>
             <li>Проектировал data pipelines из MySQL-баз скважинных данных месторождений</li>
             <li>Автоматизировал бизнес-процессы инженеров инструментами на Python и VBA</li>
@@ -183,71 +146,136 @@
           </ul>
           <div class="job-stack">Python · LSTM · Scikit-learn · MySQL · SQL · VBA · Pandas · NumPy</div>
         </div>
-
-
-        <h2 class="hero__subtitle_page2">Образование:</h2>
-        <p class="hero__description_page2">
-            Инженер-геолог, специалитет, Томский политехнический университет (ТПУ), 2015 - 2020 г.
-        </p>
-                  
       </div>
-    
-    </div>
-  </div>
- 
- 
- 
- 
- 
- 
-  <!--page 3-->
- <div class="hero">
-  <div class="container hero__container">
 
-
-    <div class="hero__about_page2">
-      <h2 class="hero__subtitle_page3"> Hard skills</h2>
-      <div class="hero__description_page2">
-        <ul class="hero__description_list2">
-          <li>Языки программирования: <b>Python</b></li>
-          <li>ML/DL: <b>Scikit-learn</b>, <b>PyTorch</b>, <b>LSTM</b>, <b>Transformers (BERT)</b></li>
-          <li>LLM: <b>OpenAI API</b>, prompt engineering</li>
-          <li>AI-разработка: <b>AI-агенты</b>, <b>MCP</b>, построение агентных пайплайнов</li>
-          <li>MLOps: <b>MLflow</b>, <b>ClearML</b>, <b>Airflow</b>, <b>GitLab CI/CD</b></li>
-          <li>API и сервисы: <b>FastAPI</b>, <b>Kafka</b>, <b>Docker</b>, <b>OpenShift</b></li>
-          <li>Базы данных: <b>ClickHouse</b>, <b>MySQL</b>, <b>SQL</b>, <b>S3</b></li>
-          <li>Мониторинг: <b>Grafana</b>, <b>Prometheus</b></li>
-          <li>Данные: <b>NumPy</b>, <b>Pandas</b>, <b>Regex</b></li>
-        </ul>
+      <div class="education">
+        <h3 class="subsection-title">Образование</h3>
+        <p class="education-text">Инженер-геолог, специалитет, Томский политехнический университет (ТПУ), 2015 — 2020</p>
       </div>
     </div>
+  </section>
 
-    <div class="hero__about_page2">
-      <h2 class="hero__subtitle_page3"> Soft skills</h2>
-      <div class="hero__description_page2">
-        <ul class="hero__description_list2">
-          <li>Найм и построение команды ML-инженеров</li>
-          <li>Менторинг и code review</li>
-          <li>Кросс-функциональное взаимодействие с продуктом и бизнесом</li>
-          <li>Стратегическое планирование и формирование roadmap</li>
-          <li>Публичные выступления — 20+ международных конференций</li>
-          <li>Работа с непрофильными заказчиками, управление ожиданиями</li>
-          <li>Преподавание и передача знаний</li>
-        </ul>
+  <!-- Pet Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section__title"><span>Pet Projects</span></h2>
+      <div class="section__divider"></div>
+      <p class="projects__intro">В свободное время занимаюсь разработкой своих проектов — для прокачки hard skills и автоматизации повседневных рутинных задач.</p>
+
+      <div class="projects-grid">
+
+        <a class="project-card" href="https://github.com/Bsshevchenko/SmartSavings" target="_blank">
+          <div class="project-card__top">
+            <i class='bx bxl-github project-card__icon'></i>
+            <i class='bx bx-link-external project-card__link-icon'></i>
+          </div>
+          <h3 class="project-card__title">SmartSavings</h3>
+          <p class="project-card__desc">Умные сбережения — инструмент для анализа и управления личными финансами.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/Bsshevchenko/ReflectionBot" target="_blank">
+          <div class="project-card__top">
+            <i class='bx bxl-github project-card__icon'></i>
+            <i class='bx bx-link-external project-card__link-icon'></i>
+          </div>
+          <h3 class="project-card__title">ReflectionBot</h3>
+          <p class="project-card__desc">ИИ-бот психолог — помогает с рефлексией и эмоциональной поддержкой.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/Bsshevchenko/TaskPlanBot" target="_blank">
+          <div class="project-card__top">
+            <i class='bx bxl-github project-card__icon'></i>
+            <i class='bx bx-link-external project-card__link-icon'></i>
+          </div>
+          <h3 class="project-card__title">TaskPlanBot</h3>
+          <p class="project-card__desc">ИИ-планировщик задач — организует дела и помогает расставить приоритеты.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/Bsshevchenko/crypto-pulse-bot" target="_blank">
+          <div class="project-card__top">
+            <i class='bx bxl-github project-card__icon'></i>
+            <i class='bx bx-link-external project-card__link-icon'></i>
+          </div>
+          <h3 class="project-card__title">CryptoPulseBot</h3>
+          <p class="project-card__desc">Мониторинг цен криптовалют — уведомления и отслеживание рынка в реальном времени.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/Bsshevchenko/EnglishTutorBot" target="_blank">
+          <div class="project-card__top">
+            <i class='bx bxl-github project-card__icon'></i>
+            <i class='bx bx-link-external project-card__link-icon'></i>
+          </div>
+          <h3 class="project-card__title">EnglishTutorBot</h3>
+          <p class="project-card__desc">ИИ-репетитор английского языка — персональные упражнения и разговорная практика.</p>
+        </a>
+
       </div>
     </div>
+  </section>
 
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section__title"><span>Навыки</span></h2>
+      <div class="section__divider"></div>
 
-  </div>
-</div>
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Hard skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">LSTM</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">BERT</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">LLM</span>
+            <span class="skill-tag">AI-агенты</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">Prompt engineering</span>
+            <span class="skill-tag">MLflow</span>
+            <span class="skill-tag">ClearML</span>
+            <span class="skill-tag">Airflow</span>
+            <span class="skill-tag">GitLab CI/CD</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Kafka</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">OpenShift</span>
+            <span class="skill-tag">ClickHouse</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Regex</span>
+          </div>
+        </div>
 
+        <div class="skills-group">
+          <h3 class="skills-group-title">Soft skills</h3>
+          <ul class="soft-list">
+            <li>Найм и построение команды ML-инженеров</li>
+            <li>Менторинг и code review</li>
+            <li>Кросс-функциональное взаимодействие с продуктом и бизнесом</li>
+            <li>Стратегическое планирование и формирование roadmap</li>
+            <li>Публичные выступления — 20+ международных конференций</li>
+            <li>Работа с непрофильными заказчиками, управление ожиданиями</li>
+            <li>Преподавание и передача знаний</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>Email: bsshevchenko2@gmail.com</p>
-      <!-- Другие контактные данные или информация -->
+      <p>bsshevchenko2@gmail.com</p>
     </div>
   </footer>
 
 </body>
 </html>
-
