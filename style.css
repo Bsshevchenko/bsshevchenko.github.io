@@ -214,8 +214,14 @@ h3 {
 .hero__description_list2 {
   font-size: 18px;
   margin-bottom: 0px;
-  margin-top: -20px;
+  margin-top: 4px;
   line-height: 2;
+}
+
+.job-entry .hero__description_list2 {
+  font-size: 15px;
+  margin-top: 4px;
+  line-height: 1.8;
 }
 
 
@@ -254,6 +260,56 @@ h3 {
   margin-left: 10px;
   
     
+}
+
+/* Job entries */
+
+.job-entry {
+  border-left: 3px solid #4facfe;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  background: #f9f9f9;
+  border-radius: 0 8px 8px 0;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.job-company {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.job-period {
+  font-size: 14px;
+  color: #777;
+}
+
+.job-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4facfe;
+  margin-bottom: 8px;
+}
+
+.job-description {
+  font-size: 15px;
+  color: #444;
+  margin: 0 0 8px 0;
+}
+
+.job-stack {
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 /* page 3 */
@@ -406,8 +462,27 @@ footer {
     font-weight: 400;
     text-align: center;
     }
-      
+
+  .job-header {
+    flex-direction: column;
+  }
+
+  .job-company {
+    font-size: 16px;
+  }
+
+  .job-title {
+    font-size: 14px;
+  }
+
+  .job-description {
+    font-size: 14px;
+  }
+
+  .job-stack {
+    font-size: 12px;
+  }
 
 
-  
+
 }
