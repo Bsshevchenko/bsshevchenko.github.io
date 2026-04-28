@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Богдан Шевченко — Team Lead / ML Engineer</title>
+  <title>Bogdan Shevchenko — Team Lead / ML Engineer</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,10 +19,15 @@
     <div class="nav-container">
       <span class="nav-logo">BS</span>
       <div class="nav-links">
-        <a href="#home">Главная</a>
-        <a href="#resume">Резюме</a>
-        <a href="#projects">Проекты</a>
-        <a href="#skills">Навыки</a>
+        <a href="#home" data-i18n="nav-home">Home</a>
+        <a href="#resume" data-i18n="nav-resume">Resume</a>
+        <a href="#projects" data-i18n="nav-projects">Projects</a>
+        <a href="#skills" data-i18n="nav-skills">Skills</a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="ru">RU</button>
       </div>
     </div>
   </nav>
@@ -31,11 +36,11 @@
   <section id="home" class="hero">
     <div class="container hero__container">
       <div class="hero__content">
-        <p class="hero__greeting">Привет, я</p>
-        <h1 class="hero__name">Богдан Шевченко</h1>
+        <p class="hero__greeting" data-i18n="hero-greeting">Hi, I'm</p>
+        <h1 class="hero__name">Bogdan Shevchenko</h1>
         <h2 class="hero__role">Team Lead / ML Engineer</h2>
-        <p class="hero__description">
-          Занимаюсь разработкой ML/LLM-решений в high-load среде. Руковожу направлением антифрода в Wildberries, строю команды, запускаю production-сервисы. Преподаю в Яндекс.Практикум.
+        <p class="hero__description" data-i18n="hero-desc">
+          I develop ML/LLM solutions in high-load environments. I lead the anti-fraud direction at Wildberries, build teams, and launch production services. I teach at Yandex Practicum.
         </p>
         <div class="hero__links">
           <a class="hero__link" href="https://github.com/Bsshevchenko" target="_blank"><i class='bx bxl-github'></i></a>
@@ -46,7 +51,7 @@
       </div>
       <div class="hero__photo-wrap">
         <div class="hero__photo-inner">
-          <img src="photo/11.png" alt="Богдан Шевченко">
+          <img src="photo/11.png" alt="Bogdan Shevchenko">
         </div>
       </div>
     </div>
@@ -55,35 +60,35 @@
   <!-- Resume -->
   <section id="resume" class="section section--alt">
     <div class="container">
-      <h2 class="section__title"><span>Резюме</span></h2>
+      <h2 class="section__title"><span data-i18n="section-resume">Resume</span></h2>
       <div class="section__divider"></div>
 
-      <h3 class="subsection-title">О себе</h3>
+      <h3 class="subsection-title" data-i18n="about-title">About</h3>
       <ul class="about-list">
-        <li>Team Lead и Senior ML Engineer с 5+ годами опыта в разработке и внедрении ML/LLM-решений в high-load среде.</li>
-        <li>Руковожу направлением "Проблемный товар" в антифроде Wildberries — строю команду ML-инженеров, масштабирую продуктовую линейку, внедряю MLOps-практики.</li>
-        <li>Опыт в Wildberries, Сбербанке и Роснефти: запускал production-сервисы в антифроде, безопасной обработке данных и нефтедобыче, применяя классический ML, трансформеры (BERT) и LLM.</li>
-        <li>Преподаватель в Яндекс.Практикум на курсе <b>Инженер по машинному обучению</b></li>
-        <li>Спикер на более чем <b>20</b> международных научно-технических конференциях на русском и английском языках</li>
-        <li>Автор <b>3-х</b> научных публикаций (Scopus, ВАК) на русском и английском языках</li>
+        <li data-i18n="about-1">Team Lead and Senior ML Engineer with 5+ years of experience developing and deploying ML/LLM solutions in high-load environments.</li>
+        <li data-i18n="about-2">Leading the "Problem Goods" direction in anti-fraud at Wildberries — building a team of ML engineers, scaling the product line, implementing MLOps practices.</li>
+        <li data-i18n="about-3">Experience at Wildberries, Sberbank, and Rosneft: launched production services in anti-fraud, secure data processing, and oil extraction, applying classical ML, transformers (BERT), and LLM.</li>
+        <li data-i18n-html="about-4">Instructor at Yandex Practicum on the <b>Machine Learning Engineer</b> course.</li>
+        <li data-i18n-html="about-5">Speaker at more than <b>20</b> international scientific and technical conferences in Russian and English.</li>
+        <li data-i18n-html="about-6">Author of <b>3</b> scientific publications (Scopus, VAK) in Russian and English.</li>
       </ul>
 
       <div class="experience">
-        <h3 class="subsection-title">Опыт работы</h3>
+        <h3 class="subsection-title" data-i18n="exp-title">Work Experience</h3>
 
         <div class="job-entry">
           <div class="job-header">
             <span class="job-company">Wildberries Tech</span>
-            <span class="job-period">сент. 2025 — настоящее время</span>
+            <span class="job-period" data-i18n="job1-period">Sept. 2025 — Present</span>
           </div>
           <div class="job-title">Team Lead</div>
-          <p class="job-description">Руководитель направления "Проблемный товар" в антифроде. Масштабирую команду и продуктовую линейку, отвечаю за бизнес-метрики и технологическое развитие направления.</p>
+          <p class="job-description" data-i18n="job1-desc">Head of the "Problem Goods" direction in anti-fraud. Scaling the team and product line, responsible for business metrics and technological development.</p>
           <ul class="job-list">
-            <li>Построил и развиваю команду ML-инженеров — найм, менторинг, code review, инженерная культура</li>
-            <li>Масштабировал продуктовую линейку — запустил новые сервисы для детектирования фродовых схем</li>
-            <li>Внедрил MLOps-практики (ClearML, MLflow, Airflow), автоматизировал деплой и мониторинг моделей</li>
-            <li>Координирую работу с продуктовыми командами, аналитикой и смежными направлениями</li>
-            <li>Участвую в стратегическом планировании и формировании roadmap антифрод-систем</li>
+            <li data-i18n="job1-li-1">Built and growing a team of ML engineers — hiring, mentoring, code review, engineering culture</li>
+            <li data-i18n="job1-li-2">Scaled the product line — launched new services for detecting fraudulent schemes</li>
+            <li data-i18n="job1-li-3">Implemented MLOps practices (ClearML, MLflow, Airflow), automated deployment and model monitoring</li>
+            <li data-i18n="job1-li-4">Coordinate work with product teams, analytics, and related directions</li>
+            <li data-i18n="job1-li-5">Participate in strategic planning and anti-fraud roadmap formation</li>
           </ul>
           <div class="job-stack">Python · OpenAI API · LLM · FastAPI · Kafka · ClickHouse · S3 · Airflow · ClearML · MLflow · GitLab CI/CD · Grafana · Prometheus</div>
         </div>
@@ -91,66 +96,66 @@
         <div class="job-entry">
           <div class="job-header">
             <span class="job-company">Wildberries Tech</span>
-            <span class="job-period">сент. 2024 — сент. 2025</span>
+            <span class="job-period" data-i18n="job2-period">Sept. 2024 — Sept. 2025</span>
           </div>
           <div class="job-title">Senior ML Engineer</div>
-          <p class="job-description">Один из первых участников нового направления "Проблемный товар" в антифроде. Выстраивал с нуля ML/LLM-решения для детектирования и блокировки проблемного товара на маркетплейсе.</p>
+          <p class="job-description" data-i18n="job2-desc">One of the first members of the new "Problem Goods" direction in anti-fraud. Built from scratch ML/LLM solutions for detecting and blocking problematic goods on the marketplace.</p>
           <ul class="job-list">
-            <li>Запустил направление с нуля — от сбора требований до production-развертывания</li>
-            <li>Разработал 10+ production-сервисов для борьбы с фродом</li>
-            <li>Применял гибридный подход: LLM, классические ML-модели, статистические методы и эвристики</li>
-            <li>Выстроил интеграцию через Kafka и FastAPI между сервисами</li>
-            <li>Разработал дашборды в Grafana для трекинга качества моделей и бизнес-метрик</li>
+            <li data-i18n="job2-li-1">Launched the direction from scratch — from requirements gathering to production deployment</li>
+            <li data-i18n="job2-li-2">Developed 10+ production services for combating fraud</li>
+            <li data-i18n="job2-li-3">Applied a hybrid approach: LLM, classical ML models, statistical methods, and heuristics</li>
+            <li data-i18n="job2-li-4">Built integration via Kafka and FastAPI between services</li>
+            <li data-i18n="job2-li-5">Developed Grafana dashboards for tracking model quality and business metrics</li>
           </ul>
           <div class="job-stack">Python · LLM · FastAPI · Kafka · ClickHouse · S3 · Airflow · ClearML · GitLab CI/CD · Grafana · Scikit-learn</div>
         </div>
 
         <div class="job-entry">
           <div class="job-header">
-            <span class="job-company">Яндекс Практикум</span>
-            <span class="job-period">сент. 2024 — настоящее время · Частичная занятость</span>
+            <span class="job-company" data-i18n="job3-company">Yandex Practicum</span>
+            <span class="job-period" data-i18n="job3-period">Sept. 2024 — Present · Part-time</span>
           </div>
-          <div class="job-title">Преподаватель</div>
-          <p class="job-description">Преподаватель на курсе <b>Инженер по машинному обучению</b>.</p>
+          <div class="job-title" data-i18n="job3-title">Instructor</div>
+          <p class="job-description" data-i18n-html="job3-desc">Instructor on the <b>Machine Learning Engineer</b> course.</p>
         </div>
 
         <div class="job-entry">
           <div class="job-header">
-            <span class="job-company">Сбер</span>
-            <span class="job-period">сент. 2023 — сент. 2024</span>
+            <span class="job-company" data-i18n="job4-company">Sber</span>
+            <span class="job-period" data-i18n="job4-period">Sept. 2023 — Sept. 2024</span>
           </div>
           <div class="job-title">ML Engineer</div>
-          <p class="job-description">SafeData — высоконагруженный сервис для профилирования и обезличивания персональных данных в банковских базах данных.</p>
+          <p class="job-description" data-i18n="job4-desc">SafeData — a high-load service for profiling and anonymizing personal data in bank databases.</p>
           <ul class="job-list">
-            <li>Обучал трансформеры (BERT) для классификации последовательностей и NER-задач</li>
-            <li>Разрабатывал генератор данных на основе фиксированной структуры и LLM</li>
-            <li>Писал и оптимизировал алгоритмы и регулярные выражения для поиска ПДн в колонках БД</li>
-            <li>Разрабатывал атомарные сервисы для развертывания в инфраструктуре банка</li>
-            <li>Продукт используется всем банком и дочерними организациями; macro F1 по 100+ доменов &gt; 90%</li>
+            <li data-i18n="job4-li-1">Trained transformers (BERT) for sequence classification and NER tasks</li>
+            <li data-i18n="job4-li-2">Developed a data generator based on fixed structure and LLM</li>
+            <li data-i18n="job4-li-3">Wrote and optimized algorithms and regular expressions for finding PII in DB columns</li>
+            <li data-i18n="job4-li-4">Developed atomic services for deployment in bank infrastructure</li>
+            <li data-i18n="job4-li-5">Product is used by the entire bank and subsidiaries; macro F1 across 100+ domains &gt; 90%</li>
           </ul>
           <div class="job-stack">Python · Regex · PyTorch · Transformers · FastAPI · Docker · Jenkins · Airflow · MLflow · OpenShift</div>
         </div>
 
         <div class="job-entry">
           <div class="job-header">
-            <span class="job-company">НК Роснефть</span>
-            <span class="job-period">авг. 2020 — сент. 2023</span>
+            <span class="job-company" data-i18n="job5-company">Rosneft</span>
+            <span class="job-period" data-i18n="job5-period">Aug. 2020 — Sept. 2023</span>
           </div>
           <div class="job-title">ML Engineer</div>
-          <p class="job-description">Разрабатывал и внедрял ML-решения для оптимизации нефтедобычи и автоматизации инженерных процессов.</p>
+          <p class="job-description" data-i18n="job5-desc">Developed and implemented ML solutions for oil production optimization and automation of engineering processes.</p>
           <ul class="job-list">
-            <li>Разработал и внедрил в production ML-инструменты на базе LSTM-сетей для прогнозирования параметров скважин</li>
-            <li>Проектировал data pipelines из MySQL-баз скважинных данных месторождений</li>
-            <li>Автоматизировал бизнес-процессы инженеров инструментами на Python и VBA</li>
-            <li>Публиковал статьи на русском и английском языках, выступал на 20+ профильных конференциях</li>
+            <li data-i18n="job5-li-1">Developed and deployed to production ML tools based on LSTM networks for predicting well parameters</li>
+            <li data-i18n="job5-li-2">Designed data pipelines from MySQL databases of field well data</li>
+            <li data-i18n="job5-li-3">Automated business processes for engineers using Python and VBA tools</li>
+            <li data-i18n="job5-li-4">Published papers in Russian and English, presented at 20+ specialized conferences</li>
           </ul>
           <div class="job-stack">Python · LSTM · Scikit-learn · MySQL · SQL · VBA · Pandas · NumPy</div>
         </div>
       </div>
 
       <div class="education">
-        <h3 class="subsection-title">Образование</h3>
-        <p class="education-text">Инженер-геолог, специалитет, Томский политехнический университет (ТПУ), 2015 — 2020</p>
+        <h3 class="subsection-title" data-i18n="edu-title">Education</h3>
+        <p class="education-text" data-i18n="edu-text">Geological Engineer, specialist degree, Tomsk Polytechnic University (TPU), 2015 — 2020</p>
       </div>
     </div>
   </section>
@@ -160,7 +165,7 @@
     <div class="container">
       <h2 class="section__title"><span>Pet Projects</span></h2>
       <div class="section__divider"></div>
-      <p class="projects__intro">В свободное время занимаюсь разработкой своих проектов — для прокачки hard skills и автоматизации повседневных рутинных задач.</p>
+      <p class="projects__intro" data-i18n="projects-intro">In my free time I develop my own projects — to sharpen hard skills and automate everyday routine tasks.</p>
 
       <div class="projects-grid">
 
@@ -170,7 +175,7 @@
             <i class='bx bx-link-external project-card__link-icon'></i>
           </div>
           <h3 class="project-card__title">SmartSavings</h3>
-          <p class="project-card__desc">Умные сбережения — инструмент для анализа и управления личными финансами.</p>
+          <p class="project-card__desc" data-i18n="ss-desc">Smart savings — a tool for analyzing and managing personal finances.</p>
         </a>
 
         <a class="project-card" href="https://github.com/Bsshevchenko/ReflectionBot" target="_blank">
@@ -179,7 +184,7 @@
             <i class='bx bx-link-external project-card__link-icon'></i>
           </div>
           <h3 class="project-card__title">ReflectionBot</h3>
-          <p class="project-card__desc">ИИ-бот психолог — помогает с рефлексией и эмоциональной поддержкой.</p>
+          <p class="project-card__desc" data-i18n="rb-desc">AI psychologist bot — helps with reflection and emotional support.</p>
         </a>
 
         <a class="project-card" href="https://github.com/Bsshevchenko/TaskPlanBot" target="_blank">
@@ -188,7 +193,7 @@
             <i class='bx bx-link-external project-card__link-icon'></i>
           </div>
           <h3 class="project-card__title">TaskPlanBot</h3>
-          <p class="project-card__desc">ИИ-планировщик задач — организует дела и помогает расставить приоритеты.</p>
+          <p class="project-card__desc" data-i18n="tp-desc">AI task planner — organizes tasks and helps prioritize.</p>
         </a>
 
         <a class="project-card" href="https://github.com/Bsshevchenko/crypto-pulse-bot" target="_blank">
@@ -197,7 +202,7 @@
             <i class='bx bx-link-external project-card__link-icon'></i>
           </div>
           <h3 class="project-card__title">CryptoPulseBot</h3>
-          <p class="project-card__desc">Мониторинг цен криптовалют — уведомления и отслеживание рынка в реальном времени.</p>
+          <p class="project-card__desc" data-i18n="cpb-desc">Crypto price monitoring — real-time notifications and market tracking.</p>
         </a>
 
         <a class="project-card" href="https://github.com/Bsshevchenko/EnglishTutorBot" target="_blank">
@@ -206,7 +211,7 @@
             <i class='bx bx-link-external project-card__link-icon'></i>
           </div>
           <h3 class="project-card__title">EnglishTutorBot</h3>
-          <p class="project-card__desc">ИИ-репетитор английского языка — персональные упражнения и разговорная практика.</p>
+          <p class="project-card__desc" data-i18n="etb-desc">AI English tutor — personalized exercises and conversational practice.</p>
         </a>
 
       </div>
@@ -216,7 +221,7 @@
   <!-- Skills -->
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section__title"><span>Навыки</span></h2>
+      <h2 class="section__title"><span data-i18n="section-skills">Skills</span></h2>
       <div class="section__divider"></div>
 
       <div class="skills-grid">
@@ -231,7 +236,7 @@
             <span class="skill-tag">BERT</span>
             <span class="skill-tag">OpenAI API</span>
             <span class="skill-tag">LLM</span>
-            <span class="skill-tag">AI-агенты</span>
+            <span class="skill-tag" data-i18n="skill-ai-agents">AI Agents</span>
             <span class="skill-tag">MCP</span>
             <span class="skill-tag">Prompt engineering</span>
             <span class="skill-tag">MLflow</span>
@@ -257,13 +262,13 @@
         <div class="skills-group">
           <h3 class="skills-group-title">Soft skills</h3>
           <ul class="soft-list">
-            <li>Найм и построение команды ML-инженеров</li>
-            <li>Менторинг и code review</li>
-            <li>Кросс-функциональное взаимодействие с продуктом и бизнесом</li>
-            <li>Стратегическое планирование и формирование roadmap</li>
-            <li>Публичные выступления — 20+ международных конференций</li>
-            <li>Работа с непрофильными заказчиками, управление ожиданиями</li>
-            <li>Преподавание и передача знаний</li>
+            <li data-i18n="soft-1">Hiring and building ML engineer teams</li>
+            <li data-i18n="soft-2">Mentoring and code review</li>
+            <li data-i18n="soft-3">Cross-functional collaboration with product and business</li>
+            <li data-i18n="soft-4">Strategic planning and roadmap formation</li>
+            <li data-i18n="soft-5">Public speaking — 20+ international conferences</li>
+            <li data-i18n="soft-6">Working with non-technical stakeholders, managing expectations</li>
+            <li data-i18n="soft-7">Teaching and knowledge transfer</li>
           </ul>
         </div>
       </div>
@@ -281,6 +286,178 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const translations = {
+      en: {
+        'page-title': 'Bogdan Shevchenko — Team Lead / ML Engineer',
+        'nav-home': 'Home',
+        'nav-resume': 'Resume',
+        'nav-projects': 'Projects',
+        'nav-skills': 'Skills',
+        'hero-greeting': "Hi, I'm",
+        'hero-desc': 'I develop ML/LLM solutions in high-load environments. I lead the anti-fraud direction at Wildberries, build teams, and launch production services. I teach at Yandex Practicum.',
+        'section-resume': 'Resume',
+        'about-title': 'About',
+        'about-1': 'Team Lead and Senior ML Engineer with 5+ years of experience developing and deploying ML/LLM solutions in high-load environments.',
+        'about-2': 'Leading the "Problem Goods" direction in anti-fraud at Wildberries — building a team of ML engineers, scaling the product line, implementing MLOps practices.',
+        'about-3': 'Experience at Wildberries, Sberbank, and Rosneft: launched production services in anti-fraud, secure data processing, and oil extraction, applying classical ML, transformers (BERT), and LLM.',
+        'about-4': 'Instructor at Yandex Practicum on the <b>Machine Learning Engineer</b> course.',
+        'about-5': 'Speaker at more than <b>20</b> international scientific and technical conferences in Russian and English.',
+        'about-6': 'Author of <b>3</b> scientific publications (Scopus, VAK) in Russian and English.',
+        'exp-title': 'Work Experience',
+        'job1-period': 'Sept. 2025 — Present',
+        'job1-desc': 'Head of the "Problem Goods" direction in anti-fraud. Scaling the team and product line, responsible for business metrics and technological development.',
+        'job1-li-1': 'Built and growing a team of ML engineers — hiring, mentoring, code review, engineering culture',
+        'job1-li-2': 'Scaled the product line — launched new services for detecting fraudulent schemes',
+        'job1-li-3': 'Implemented MLOps practices (ClearML, MLflow, Airflow), automated deployment and model monitoring',
+        'job1-li-4': 'Coordinate work with product teams, analytics, and related directions',
+        'job1-li-5': 'Participate in strategic planning and anti-fraud roadmap formation',
+        'job2-period': 'Sept. 2024 — Sept. 2025',
+        'job2-desc': 'One of the first members of the new "Problem Goods" direction in anti-fraud. Built from scratch ML/LLM solutions for detecting and blocking problematic goods on the marketplace.',
+        'job2-li-1': 'Launched the direction from scratch — from requirements gathering to production deployment',
+        'job2-li-2': 'Developed 10+ production services for combating fraud',
+        'job2-li-3': 'Applied a hybrid approach: LLM, classical ML models, statistical methods, and heuristics',
+        'job2-li-4': 'Built integration via Kafka and FastAPI between services',
+        'job2-li-5': 'Developed Grafana dashboards for tracking model quality and business metrics',
+        'job3-company': 'Yandex Practicum',
+        'job3-period': 'Sept. 2024 — Present · Part-time',
+        'job3-title': 'Instructor',
+        'job3-desc': 'Instructor on the <b>Machine Learning Engineer</b> course.',
+        'job4-company': 'Sber',
+        'job4-period': 'Sept. 2023 — Sept. 2024',
+        'job4-desc': 'SafeData — a high-load service for profiling and anonymizing personal data in bank databases.',
+        'job4-li-1': 'Trained transformers (BERT) for sequence classification and NER tasks',
+        'job4-li-2': 'Developed a data generator based on fixed structure and LLM',
+        'job4-li-3': 'Wrote and optimized algorithms and regular expressions for finding PII in DB columns',
+        'job4-li-4': 'Developed atomic services for deployment in bank infrastructure',
+        'job4-li-5': 'Product is used by the entire bank and subsidiaries; macro F1 across 100+ domains > 90%',
+        'job5-company': 'Rosneft',
+        'job5-period': 'Aug. 2020 — Sept. 2023',
+        'job5-desc': 'Developed and implemented ML solutions for oil production optimization and automation of engineering processes.',
+        'job5-li-1': 'Developed and deployed to production ML tools based on LSTM networks for predicting well parameters',
+        'job5-li-2': 'Designed data pipelines from MySQL databases of field well data',
+        'job5-li-3': 'Automated business processes for engineers using Python and VBA tools',
+        'job5-li-4': 'Published papers in Russian and English, presented at 20+ specialized conferences',
+        'edu-title': 'Education',
+        'edu-text': 'Geological Engineer, specialist degree, Tomsk Polytechnic University (TPU), 2015 — 2020',
+        'projects-intro': 'In my free time I develop my own projects — to sharpen hard skills and automate everyday routine tasks.',
+        'ss-desc': 'Smart savings — a tool for analyzing and managing personal finances.',
+        'rb-desc': 'AI psychologist bot — helps with reflection and emotional support.',
+        'tp-desc': 'AI task planner — organizes tasks and helps prioritize.',
+        'cpb-desc': 'Crypto price monitoring — real-time notifications and market tracking.',
+        'etb-desc': 'AI English tutor — personalized exercises and conversational practice.',
+        'section-skills': 'Skills',
+        'skill-ai-agents': 'AI Agents',
+        'soft-1': 'Hiring and building ML engineer teams',
+        'soft-2': 'Mentoring and code review',
+        'soft-3': 'Cross-functional collaboration with product and business',
+        'soft-4': 'Strategic planning and roadmap formation',
+        'soft-5': 'Public speaking — 20+ international conferences',
+        'soft-6': 'Working with non-technical stakeholders, managing expectations',
+        'soft-7': 'Teaching and knowledge transfer',
+      },
+      ru: {
+        'page-title': 'Богдан Шевченко — Team Lead / ML Engineer',
+        'nav-home': 'Главная',
+        'nav-resume': 'Резюме',
+        'nav-projects': 'Проекты',
+        'nav-skills': 'Навыки',
+        'hero-greeting': 'Привет, я',
+        'hero-desc': 'Занимаюсь разработкой ML/LLM-решений в high-load среде. Руковожу направлением антифрода в Wildberries, строю команды, запускаю production-сервисы. Преподаю в Яндекс.Практикум.',
+        'section-resume': 'Резюме',
+        'about-title': 'О себе',
+        'about-1': 'Team Lead и Senior ML Engineer с 5+ годами опыта в разработке и внедрении ML/LLM-решений в high-load среде.',
+        'about-2': 'Руковожу направлением "Проблемный товар" в антифроде Wildberries — строю команду ML-инженеров, масштабирую продуктовую линейку, внедряю MLOps-практики.',
+        'about-3': 'Опыт в Wildberries, Сбербанке и Роснефти: запускал production-сервисы в антифроде, безопасной обработке данных и нефтедобыче, применяя классический ML, трансформеры (BERT) и LLM.',
+        'about-4': 'Преподаватель в Яндекс.Практикум на курсе <b>Инженер по машинному обучению</b>',
+        'about-5': 'Спикер на более чем <b>20</b> международных научно-технических конференциях на русском и английском языках',
+        'about-6': 'Автор <b>3-х</b> научных публикаций (Scopus, ВАК) на русском и английском языках',
+        'exp-title': 'Опыт работы',
+        'job1-period': 'сент. 2025 — настоящее время',
+        'job1-desc': 'Руководитель направления "Проблемный товар" в антифроде. Масштабирую команду и продуктовую линейку, отвечаю за бизнес-метрики и технологическое развитие направления.',
+        'job1-li-1': 'Построил и развиваю команду ML-инженеров — найм, менторинг, code review, инженерная культура',
+        'job1-li-2': 'Масштабировал продуктовую линейку — запустил новые сервисы для детектирования фродовых схем',
+        'job1-li-3': 'Внедрил MLOps-практики (ClearML, MLflow, Airflow), автоматизировал деплой и мониторинг моделей',
+        'job1-li-4': 'Координирую работу с продуктовыми командами, аналитикой и смежными направлениями',
+        'job1-li-5': 'Участвую в стратегическом планировании и формировании roadmap антифрод-систем',
+        'job2-period': 'сент. 2024 — сент. 2025',
+        'job2-desc': 'Один из первых участников нового направления "Проблемный товар" в антифроде. Выстраивал с нуля ML/LLM-решения для детектирования и блокировки проблемного товара на маркетплейсе.',
+        'job2-li-1': 'Запустил направление с нуля — от сбора требований до production-развертывания',
+        'job2-li-2': 'Разработал 10+ production-сервисов для борьбы с фродом',
+        'job2-li-3': 'Применял гибридный подход: LLM, классические ML-модели, статистические методы и эвристики',
+        'job2-li-4': 'Выстроил интеграцию через Kafka и FastAPI между сервисами',
+        'job2-li-5': 'Разработал дашборды в Grafana для трекинга качества моделей и бизнес-метрик',
+        'job3-company': 'Яндекс Практикум',
+        'job3-period': 'сент. 2024 — настоящее время · Частичная занятость',
+        'job3-title': 'Преподаватель',
+        'job3-desc': 'Преподаватель на курсе <b>Инженер по машинному обучению</b>.',
+        'job4-company': 'Сбер',
+        'job4-period': 'сент. 2023 — сент. 2024',
+        'job4-desc': 'SafeData — высоконагруженный сервис для профилирования и обезличивания персональных данных в банковских базах данных.',
+        'job4-li-1': 'Обучал трансформеры (BERT) для классификации последовательностей и NER-задач',
+        'job4-li-2': 'Разрабатывал генератор данных на основе фиксированной структуры и LLM',
+        'job4-li-3': 'Писал и оптимизировал алгоритмы и регулярные выражения для поиска ПДн в колонках БД',
+        'job4-li-4': 'Разрабатывал атомарные сервисы для развертывания в инфраструктуре банка',
+        'job4-li-5': 'Продукт используется всем банком и дочерними организациями; macro F1 по 100+ доменов > 90%',
+        'job5-company': 'НК Роснефть',
+        'job5-period': 'авг. 2020 — сент. 2023',
+        'job5-desc': 'Разрабатывал и внедрял ML-решения для оптимизации нефтедобычи и автоматизации инженерных процессов.',
+        'job5-li-1': 'Разработал и внедрил в production ML-инструменты на базе LSTM-сетей для прогнозирования параметров скважин',
+        'job5-li-2': 'Проектировал data pipelines из MySQL-баз скважинных данных месторождений',
+        'job5-li-3': 'Автоматизировал бизнес-процессы инженеров инструментами на Python и VBA',
+        'job5-li-4': 'Публиковал статьи на русском и английском языках, выступал на 20+ профильных конференциях',
+        'edu-title': 'Образование',
+        'edu-text': 'Инженер-геолог, специалитет, Томский политехнический университет (ТПУ), 2015 — 2020',
+        'projects-intro': 'В свободное время занимаюсь разработкой своих проектов — для прокачки hard skills и автоматизации повседневных рутинных задач.',
+        'ss-desc': 'Умные сбережения — инструмент для анализа и управления личными финансами.',
+        'rb-desc': 'ИИ-бот психолог — помогает с рефлексией и эмоциональной поддержкой.',
+        'tp-desc': 'ИИ-планировщик задач — организует дела и помогает расставить приоритеты.',
+        'cpb-desc': 'Мониторинг цен криптовалют — уведомления и отслеживание рынка в реальном времени.',
+        'etb-desc': 'ИИ-репетитор английского языка — персональные упражнения и разговорная практика.',
+        'section-skills': 'Навыки',
+        'skill-ai-agents': 'AI-агенты',
+        'soft-1': 'Найм и построение команды ML-инженеров',
+        'soft-2': 'Менторинг и code review',
+        'soft-3': 'Кросс-функциональное взаимодействие с продуктом и бизнесом',
+        'soft-4': 'Стратегическое планирование и формирование roadmap',
+        'soft-5': 'Публичные выступления — 20+ международных конференций',
+        'soft-6': 'Работа с непрофильными заказчиками, управление ожиданиями',
+        'soft-7': 'Преподавание и передача знаний',
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function applyLang(lang) {
+      document.documentElement.lang = lang;
+      document.title = translations[lang]['page-title'];
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[lang][key] !== undefined) el.textContent = translations[lang][key];
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.dataset.i18nHtml;
+        if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+
+      currentLang = lang;
+      localStorage.setItem('lang', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applyLang(currentLang);
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+      });
+    });
+  </script>
 
 </body>
 </html>
